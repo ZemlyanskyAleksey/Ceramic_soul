@@ -1,3 +1,5 @@
+@use "/src/sass/base/variables.scss" as *;
+
 h1,
 h2,
 h3,
@@ -36,5 +38,10 @@ html {
 }
 
 body {
-	background-color: #fff;
+	background-color: $Light;
+}
+
+.container {
+	width: 100%;
+	padding: 0 10px;
 }
