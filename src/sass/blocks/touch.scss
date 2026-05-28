@@ -1,0 +1,148 @@
+@use "/src/sass/base/variables.scss" as *;
+.touch {
+    position: relative;
+    padding-top: 60px;
+    &__grid {
+        margin-top: 60px;
+    }
+    &__fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__label {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: $Dark;
+    }
+    &__input {
+        width: 100%;
+        height: 48px;
+        padding: 10px 15px;
+        background: #ffffff;
+        border: 1px solid #e2e1e5;
+        border-radius: 2px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: normal;
+            color: $ui-disabled;
+        }
+        &:focus {
+            border: none;
+            outline: 1px solid $Dark;
+        }
+    }
+    &__area {
+        width: 100%;
+        height: 132px;
+        padding: 10px 15px;
+        background: #ffffff;
+        border: 1px solid #e2e1e5;
+        border-radius: 2px;
+        resize: none;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: normal;
+            color: $ui-disabled;
+        }
+        &:focus {
+            border: none;
+            outline: 1px solid $Dark;
+        }
+    }
+    &__label-block {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        a {
+            color: #a22dc6;
+            text-decoration: none;
+            margin-left: 3px;
+        }
+    }
+    &__checkbox {
+        width: 15px;
+        height: 15px;
+        margin-right: 15px;
+    }
+    &__btn {
+        margin-top: 20px;
+    }
+    &__img {
+        display: none;
+    }
+    &__img-absolute {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 728px) {
+    .touch {
+        &__img-absolute {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-right: 24px;
+        }
+        &__grid {
+            margin-top: 46px;
+        }
+        &__form {
+            width: 300px;
+            padding-left: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .touch {
+        &__grid {
+            margin-top: 80px;
+            display: grid;
+            grid-template: repeat(1, auto) / repeat(1, 550px) 1fr;
+            column-gap: 40px;
+        }
+        &__form {
+            padding: 0;
+        }
+        &__img {
+            display: block;
+            width: 550px;
+            height: 342px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        }
+        &__img-absolute {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .touch {
+        &__grid {
+            grid-template: repeat(1, auto) / repeat(1, 573px) 1.13fr;
+            column-gap: 147px;
+            // align-items: center;
+        }
+        &__img {
+            width: 573px;
+            height: 356px;
+        }
+        &__img-absolute {
+            margin-right: 315px;
+        }
+        &__fieldset {
+            display: grid;
+            grid-template: repeat(2, auto) / repeat(2, 300px);
+            .fieldset-order {
+                order: -1;
+            }
+            column-gap: 45px;
+        }
+    }
+}

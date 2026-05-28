@@ -1,80 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The site is dedicated to pottery" />
+        <meta name="author" content="Zemlyansky_Aleksey" />
+        <title>Ceramic soul</title>
+        <link rel="icon" type="image/x-icon" href="/src/favicon.ico" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The site is dedicated to pottery">
-    <meta name="author" content="Zemlyansky_Aleksey">
-    <title>Ceramic soul</title>
-    <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
-</head>
-
-<body>
-    <section class="promo">
-        <img src="/src/img/promo/potter.jpg" alt="potter" class="promo__potter">
-        <div class="container">
-            <div class="header">
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a href="#" class="header__logo">
-                    <img src="/src/logo/logo.png" alt="logo">
-                </a>
-                <div class="header__icons">
-                    <a href="#">
-                        <img src="/src/icon/search-outline.svg" alt="search">
+    <body>
+        <section class="promo">
+            <img
+                src="/src/img/promo/potter.jpg"
+                alt="potter"
+                class="promo__potter"
+            />
+            <div class="container">
+                <div class="header">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="#" class="header__logo">
+                        <img src="/src/logo/logo.png" alt="logo" />
                     </a>
-                    <a href="#">
-                        <img src="/src/icon/shopping-bag.svg" alt="bag">
-                    </a>
+                    <div class="header__icons">
+                        <a href="#">
+                            <img
+                                src="/src/icon/search-outline.svg"
+                                alt="search"
+                            />
+                        </a>
+                        <a href="#">
+                            <img src="/src/icon/shopping-bag.svg" alt="bag" />
+                        </a>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#" class="header__link">catalog</a></li>
+                        <li><a href="#" class="header__link">blog</a></li>
+                        <li><a href="#" class="header__link">about</a></li>
+                    </ul>
+                </nav>
+                <div class="promo__wrapper">
+                    <h1 class="title-h1-italic promo__title">
+                        Make your dream come true<br />or decorate your home
+                    </h1>
+                    <div class="promo__cta">
+                        <img
+                            src="/src/img/promo/ceramic-vase.jpg"
+                            alt="vase"
+                            class="promo__img"
+                        />
+                        <button class="btn-default promo__btn">shop now</button>
+                    </div>
                 </div>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#" class="header__link">catalog</a></li>
-                    <li><a href="#" class="header__link">blog</a></li>
-                    <li><a href="#" class="header__link">about</a></li>
-                </ul>
-            </nav>
-            <div class="promo__wrapper">
-                <h1 class="title-h1-italic promo__title">Make your dream come true<br>or decorate your home</h1>
-                <div class="promo__cta">
-                    <img src="/src/img/promo/ceramic-vase.jpg" alt="vase" class="promo__img">
-                    <button class="btn-default promo__btn">shop now</button>
+        </section>
+        <section class="cob">
+            <div class="container">
+                <h2 class="title-h2">create or buy</h2>
+                <div class="cob__grid">
+                    <h3 class="title-h3">our store</h3>
+                    <img
+                        src="/src/img/about/store.jpg"
+                        alt="store"
+                        class="cob__img"
+                    />
+                    <p class="cob__text">
+                        Welcome to <span>Ceramic Soul</span>, where each piece
+                        tells a story of craftsmanship and creativity. Our
+                        handmade ceramics are thoughtfully designed and
+                        carefully crafted, blending traditional techniques with
+                        modern aesthetics. Whether you're looking for a unique
+                        gift or a special addition to your home, our collection
+                        offers timeless pieces that bring warmth and
+                        authenticity to any space.
+                    </p>
+                    <h3 class="cob__title_mt title-h3">our workshop</h3>
+                    <img
+                        src="/src/img/about/ceramic.jpg"
+                        alt="ceramic"
+                        class="cob__img"
+                    />
+                    <p class="cob__text cob__text_fixed">
+                        At <span>Ceramic Soul</span> workshop, we don’t just
+                        craft ceramics—we invite you to get hands-on and create
+                        your own unique pieces. Through our engaging
+                        masterclasses, you’ll learn traditional techniques, work
+                        with natural materials, and experience the joy of
+                        shaping clay into something truly personal.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="cob">
-        <div class="container">
-            <h2 class="title-h2">create or buy</h2>
-            <div class="cob__grid">
-                <h3 class="title-h3">our store</h3>
-                <img src="/src/img/about/store.jpg" alt="store" class="cob__img">
-                <p class="cob__text">Welcome to <span>Ceramic Soul</span>, where each piece tells a story of
-                    craftsmanship and creativity. Our handmade ceramics are thoughtfully designed and carefully
-                    crafted,
-                    blending traditional techniques with modern aesthetics. Whether you're looking for a unique gift
-                    or
-                    a special addition to your home, our collection offers timeless pieces that bring warmth and
-                    authenticity to any space.</p>
-                <h3 class="cob__title_mt title-h3">our workshop</h3>
-                <img src="/src/img/about/ceramic.jpg" alt="ceramic" class="cob__img">
-                <p class="cob__text cob__text_fixed">At <span>Ceramic Soul</span> workshop, we don’t just craft
-                    ceramics—we invite
-                    you
-                    to get hands-on and create your own unique pieces. Through our engaging masterclasses, you’ll
-                    learn
-                    traditional techniques, work with natural materials, and experience the joy of shaping clay into
-                    something truly personal.</p>
+        </section>
+        <section class="touch">
+            <img
+                src="/src/img/form/vase.png"
+                alt="vase"
+                class="touch__img-absolute"
+            />
+            <div class="container">
+                <h2 class="title-h2 touch__title">get in touch</h2>
+                <div class="touch__grid">
+                    <div class="touch__img">
+                        <img src="/src/img/form/tea.jpg" alt="tea" />
+                    </div>
+                    <div class="touch__form">
+                        <form action="#">
+                            <fieldset class="touch__fieldset">
+                                <label class="touch__label" for="name"
+                                    >Name</label
+                                >
+                                <input
+                                    class="touch__input"
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Name"
+                                    required
+                                />
+                                <label
+                                    class="touch__label fieldset-order"
+                                    for="email"
+                                    >Email</label
+                                >
+                                <input
+                                    class="touch__input"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    required
+                                />
+                            </fieldset>
+                            <label class="touch__label" for="question"
+                                >Your question</label
+                            >
+                            <textarea
+                                class="touch__area"
+                                name="question"
+                                id="question"
+                                placeholder="Question"
+                                required
+                            ></textarea>
+                            <label
+                                class="touch__label touch__label-block"
+                                for="checkbox"
+                            >
+                                <input
+                                    class="touch__checkbox"
+                                    type="checkbox"
+                                    id="checkbox"
+                                    required
+                                />
+                                I agree with the <a href="#">terms</a>
+                            </label>
+                            <button class="btn-send touch__btn">
+                                send request
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <script type="module" src="/src/js/main.js"></script>
-</body>
-
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
 </html>
